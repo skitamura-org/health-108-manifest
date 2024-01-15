@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+commonLabels:
+  backstage.io/kubernetes-id: health-108
+
+resources:
+#  - project.yaml
+#  - rolebindings.yaml
+  - health-108-deploy.yaml
+  - health-108-service.yaml
+  - health-108-route.yaml
